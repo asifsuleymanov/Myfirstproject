@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width ,initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="registerstyle.css">
+	<title>Register/Booking</title>
+</head>
+<body>
+		<header>
+		<nav>
+			<ul>
+				<li><a href="index.html"><span class="home">Home</span></a></li>
+				<li><a href="cities.html"><span class="home">Lets browse COUNTRIES</span></a></li>
+				<li><a href="prices.html"><span class="home">About prices</span></a></li>
+				<li><span class="home">Register/Booking</span></li>
+				</ul>
+			</nav>
+	    </header>
+	    	<h1>REGISTER AND BOOK</h1>
+	    	<div>
+	    		<form method="GET">
+                    <label for="fname"><span class="head">First Name:</span></label><br>
+	    			<input type="text" name="firstname" placeholder="Your name.."><br><br>
+	    			<label for="lname"><span class="head">Last Name:</span></label><br>
+	    			<input type="text" name="lastname" placeholder="Your lastname.."><br><br>
+	    			<label for="email"><span class="head">Email:</span></label><br>
+	    			<input type="email" name="email" placeholder="Your email.." required><br><br>
+	    			<label for="password"><span class="head">Password:</span></label><br>
+	    			<input type="password" name="password" minlength="6" placeholder="Your password.."><br><br>
+	    			<label for="birthday"><span class="head">Birthday:</span></label><br>
+	    			<input type="date" name="birthday"><br><br>
+	    			<label for="gender"><span class="head">Gender:</span></label><br>
+	    		    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="male">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="female">
+                    <label for="other">Other</label>
+                    <input type="radio" name="gender" value="other"><br><br>
+	    		    <label for="countries"><span class="head">Choose Country:</span></label><br>
+	    		    <input list="countries" name="country" id="country">
+	    		    <datalist id="countries">
+	    		       <option value="Turkey">
+	    		       <option value="United Kingdom">
+	    		       <option value="Russia">
+	    		       	<option value="USA">
+	    		        <option value="France">
+	    		        <option value="Chinese">
+	    		        <option value="Italy">
+	    		        <option value="Azerbaijan">	
+                 </datalist><br><br>
+                 <label for="hotels"><span class="head">Choose Hotel:</span></label><br>
+                 <select name="hotels" id="hotels">
+                 	<optgroup label="Istanbul">
+                 		<option value="NEROION HOTEL">NEROION HOTEL</option>
+                 		<option value="YASHMAK SULTAN">YASHMAK SULTAN</option>
+                 		<option value="RADISSON BLUE HOTEL">RADISSON BLUE HOTEL</option>
+                 		<option value="TREE BY HILTON">TREE BY HILTON</option>
+                 	</optgroup>
+                 	<optgroup label="London">
+                 		<option value="THE WESTBRIDGE LONDON">THE WESTBRIDGE LONDON</option>
+                 		<option value="HILTON LONDON BANKSIDE">HILTON LONDON BANKSIDE</option>
+                 		<option value="ROYAL LANCASTER LONDON ">ROYAL LANCASTER LONDON</option>
+                 		<option value="CROWNE PLAZA">CROWNE PLAZA</option>
+                   </optgroup>
+                   <optgroup label="Moscow">
+                   	<option value="STANDART DESIGN HOTEL">STANDART DESIGN HOTEL</option>
+                   	<option value="HYATT REGENCY MOSCOW">HYATT REGENCY MOSCOW</option>
+                   	<option value="THE ST. REGIS MOSCOW">THE ST. REGIS MOSCOW</option>
+                   	<option value="MOSCOW MARRIOT GRAND">MOSCOW MARRIOT GRAND</option>
+                   </optgroup>
+                   <optgroup label="NEW-YORK">
+                   	<option value="WARWICH NEW YORK">WARWICH NEW YORK</option>
+                   	<option value="THE BENJAMIN">THE BENJAMIN</option>
+                   	<option value="EXECUTIVE HOTEL LESOLEIL">EXECUTIVE HOTEL LESOLEIL</option>
+                   	<option value="SANCTUARY HOTEL">SANCTUARY HOTEL</option>
+                   </optgroup>
+                   <optgroup label="Paris">
+                   	<option value="BEST WESERN HOTEL">BEST WESERN HOTEL</option>
+                   	<option value="HOLIDAY INN">HOLIDAY INN</option>
+                   	<option value="COMFOT INN RICHMOND">COMFOT INN RICHMOND</option>
+                   	<option value="RED ROOF INN">RED ROOF INN</option>
+                   </optgroup>
+                   <optgroup label="Shankhai">
+                   	<option value="SHANGRI-LA HOTEL">SHANGRI-LA HOTEL</option>
+                   	<option value="CORDIS HOTELS">CORDIS HOTELS</option>
+                   	<option value="HYATT PLACE SHANKHAI">HYATT PLACE SHANKHAI</option>
+                   	<option value="GUBEI GARDEN HOTEL">GUBEI GARDEN HOTEL</option>
+                    </optgroup>
+                    <optgroup label="Venice">
+                    	<option value="HOTEL INDIGO">HOTEL INDIGO</option>
+                    	<option value="HYATT CENTIC MURANO">HYATT CENTIC MURANO</option>
+                    	<option value="HOTEL AL CODEGA">HOTEL AL CODEGA</option>
+                    	<option value="HN VENEZIA LAGUNA PLACE">HN VENEZIA LAGUNA PLACE</option>
+                    </optgroup>
+                    <optgroup label="Baku">
+                    	<option value="EXCELSIOR BAKU">EXCELSIOR BAKU</option>
+                    	<option value="HOLIDAY INN BAKU">HOLIDAY INN BAKU</option>
+                    	<option value="FAIRMONT HOTEL">FAIRMONT HOTEL</option>
+                    	<option value="FOUR SEASAON HOTEL BAKU">FOUR SEASAON HOTEL BAKU</option><br>
+                    </optgroup>
+                </select><br><br>
+                                     <label for="room"><span class="head">Room:</span></label><br>
+                                     <input type="number" name="number" min="1" max="6"><br><br>
+                                     <label for="facilities"><span class="head">Facilities:</span></label><br>
+                                     <input type="checkbox" id="facilities" name="facilities" value="parking">
+                                     <label for="facilities">Parking</label><br>
+                                     <input type="checkbox" id="facilities2" name="facilities2" value="non-smoking room">
+                                     <label for="facilities">Non-smoking room</label><br>
+                                     <input type="checkbox" id="facilities3" name="facilities3" value="airport shuttle">
+                                     <label for="facilities3">Airport shuttle</label><br>
+                                     <input type="checkbox" id="facilities4" name="facilities4" value="family room">
+                                     <label for="facilities4">Family room</label><br>
+                                     <input type="checkbox" id="facilities5" name="facilities5" value="free wifi">
+                                     <label for="facilities5">Free wifi</label><br>
+                                     <input type="checkbox" id="facilities6" name="facilities5" value="swimming pool">
+                                     <label for="facilities6">Swimming pool</label><br><br>
+
+                    <input type="submit" name="submit">
+                    <input type="reset" name="reset">
+            </form>
+	    	</div>
+
+</body>
+</html>
