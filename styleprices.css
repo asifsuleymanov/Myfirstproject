@@ -34,10 +34,6 @@ td{
 	color: rgba(154, 255, 0);
 }
 
-header{
-	text-align: right;
-	font-size: 2vw
-}
 .list2{
 	list-style: none;
 	display: inline-block;
@@ -52,16 +48,7 @@ header{
 .main:active {
 	color:yellow;
 }
-.home{
-	margin: 20px;
-	color:rgba(64, 48, 117,0.7);
-}
-.home:hover{
-	color:red;
-}
-.home:active {
-	color:yellow;
-}
+
 .main2{
 	font-size: 30px;
 }
@@ -70,4 +57,38 @@ span{
 }
 td.na{
 	text-align: center;
+}
+* {box-sizing: border-box}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 25%; /* Four links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.navbar a.active {
+  background-color: #4CAF50;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
 }

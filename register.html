@@ -6,18 +6,16 @@
 	<title>Register/Booking</title>
 </head>
 <body>
-		<header>
-		<nav>
-			<ul>
-				<li><a href="index.html"><span class="home">Home</span></a></li>
-				<li><a href="cities.html"><span class="home">Lets browse COUNTRIES</span></a></li>
-				<li><a href="prices.html"><span class="home">About prices</span></a></li>
-				<li><span class="home">Register/Booking</span></li>
-				</ul>
-			</nav>
-	    </header>
+	<div class="navbar">
+  <a class="active" href="index.html">Home</a> 
+  <a href="cities.html">Images of Cities</a> 
+  <a href="prices.html">About Prices</a> 
+  <a href="register.html">Register/Booking</a>
+</div>
+         <div>
 	    	<h1>REGISTER AND BOOK</h1>
-	    	<div>
+	    </div>
+	    	<div class="reg">
 	    		<form method="GET">
                     <label for="fname"><span class="head">First Name:</span></label><br>
 	    			<input type="text" name="firstname" placeholder="Your name.."><br><br>
@@ -114,9 +112,10 @@
                                      <label for="facilities5">Free wifi</label><br>
                                      <input type="checkbox" id="facilities6" name="facilities5" value="swimming pool">
                                      <label for="facilities6">Swimming pool</label><br><br>
-
+                  <div class="sub">
                     <input type="submit" name="submit">
                     <input type="reset" name="reset">
+                </div>
             </form>
 	    	</div>
 
