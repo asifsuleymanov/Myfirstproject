@@ -150,7 +150,7 @@ input[type=number]{
 
 input[type=number]:focus {
   border: 3px solid rgba(149, 65, 0);
-  width: 10%;
+  width: 60%;
 }
 
 select{
